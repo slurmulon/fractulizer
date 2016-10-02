@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "rm -rf dist && rollup -c && cp src/index.html dist/index.html && browserify dist/bundle.js -o dist/browser.bundle.js",
+    "serve": "npm run build && http-server dist",
     "test": "mocha test"
   },
   "repository": {
